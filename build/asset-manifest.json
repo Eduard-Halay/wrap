@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d0ca24d8.css",
+    "main.js": "/static/js/main.33348b72.js",
+    "static/media/materialdesignicons-webfont.svg?v=1.4.57": "/static/media/materialdesignicons-webfont.3a30eb21bbe7b62492c4.svg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/Linearicons.eot": "/static/media/Linearicons.bdfde8649159bef2d8af.eot",
+    "static/media/Linearicons.woff": "/static/media/Linearicons.7c4a28cc409290fc67fa.woff",
+    "static/media/Linearicons.ttf": "/static/media/Linearicons.bf4bc995062772cdc4aa.ttf",
+    "static/media/materialdesignicons-webfont.eot": "/static/media/materialdesignicons-webfont.2b0b4f745deaf879c254.eot",
+    "static/media/materialdesignicons-webfont.ttf?v=1.4.57": "/static/media/materialdesignicons-webfont.fee2c56d0248f5774511.ttf",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/materialdesignicons-webfont.woff?v=1.4.57": "/static/media/materialdesignicons-webfont.6ec34761e3f71f3ca0df.woff",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/Mercury-Regular.svg?62418065": "/static/media/Mercury-Regular.fc141dee2ffdf18aaf25.svg",
+    "static/media/materialdesignicons-webfont.woff2?v=1.4.57": "/static/media/materialdesignicons-webfont.9d61ad513663c1f6900d.woff2",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/Mercury-Regular.eot?62418065": "/static/media/Mercury-Regular.48281a8f8478bee0508e.eot",
+    "static/media/Mercury-Regular.ttf?62418065": "/static/media/Mercury-Regular.fe5118f2865922b82711.ttf",
+    "static/media/Mercury-Regular.woff?62418065": "/static/media/Mercury-Regular.ec7be7cdb95961e298bd.woff",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.d0ca24d8.css.map": "/static/css/main.d0ca24d8.css.map",
+    "main.33348b72.js.map": "/static/js/main.33348b72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0ca24d8.css",
+    "static/js/main.33348b72.js"
+  ]
+}
