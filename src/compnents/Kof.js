@@ -9,11 +9,11 @@ export default function Kof() {
             <b>Privacy Policy</b>
             <p>
               This Privacy Policy governs the collection, use, storage and
-              disclosure of information related to fulminant.org received from
-              users (each of whom referred to as the "User") of the website
-              https://fulminant.org ("Website"). This privacy policy applies to
-              the Site, as well as all products and services offered on
-              fulminant.org.
+              disclosure of information related to lightning-like.com received
+              from users (each of whom referred to as the "User") of the website
+              https:// lightning-like.com ("Website"). This privacy policy
+              applies to the Site, as well as all products and services offered
+              on Lightning like
             </p>
 
             <b>Personally Identifiable Information</b>
@@ -41,12 +41,12 @@ export default function Kof() {
 
             <b>How we use the information we collect</b>
             <p>
-              Fulminant.org may collect and use personal information users for
+              Lightning-like may collect and use personal information users for
               the following purposes:
             </p>
             <b>How we use the information we collect</b>
             <p>
-              Fulminant.org may collect and use personal information users for
+              Lightning-like may collect and use personal information users for
               the following purposes:
             </p>
             <ul>
