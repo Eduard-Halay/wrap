@@ -16,7 +16,7 @@ const ShowFullItem = ({ item, onAdd, onShowItem }) => {
     const quantity = parseInt(event.target.value);
     let newPriceObject = priceObject;
     if (quantity >= 0) {
-      newPriceObject = Math.floor((quantity / 100) * 10);
+      newPriceObject = Math.floor((quantity / item.qstep) * item.pstep);
     }
     setQuantity(quantity);
     setPriceObject(newPriceObject);
@@ -24,16 +24,8 @@ const ShowFullItem = ({ item, onAdd, onShowItem }) => {
 
   const handlePriceChange = (event) => {
     const newPriceObject = parseInt(event.target.value);
-    let quantity = 0;
-    if (newPriceObject === 10) {
-      quantity = 100;
-    } else if (newPriceObject === 20) {
-      quantity = 200;
-    } else if (newPriceObject === 30) {
-      quantity = 300;
-    } else {
-      quantity = Math.floor((newPriceObject / 10) * 100);
-    }
+
+    quantity = Math.floor((newPriceObject / item.pstep) * item.qstep);
 
     setPriceObject(newPriceObject);
     setQuantity(quantity);
@@ -75,7 +67,7 @@ const ShowFullItem = ({ item, onAdd, onShowItem }) => {
             <br />
           </label>
 
-          <label>{t("pf")}</label>
+          <label>{item.textprise}</label>
         </div>
         <label>
           {t("eq")}

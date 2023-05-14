@@ -27,13 +27,16 @@ export default function Footer() {
 
             <a
               class="d-inline-block accent-link bl"
-              href="mailto:fulminant.org@gmail.com"
+              href="mailto:office.lightning.like@gmail.com"
             >
-              fulminant.org@gmail.com
+              office.lightning.like@gmail.com
             </a>
             <ul class="footer-classic-nav-list text-white bl">
               <li>
-                <a className="fa fa-instagram " href="#">
+                <a
+                  className="fa fa-instagram "
+                  href="https://www.instagram.com/lightning_like/?igshid=MzRlODBiNWFlZA%3D%3D"
+                >
                   &nbsp;Instagram
                 </a>
               </li>

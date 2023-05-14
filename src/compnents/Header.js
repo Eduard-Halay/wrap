@@ -47,7 +47,7 @@ export default function Header(props) {
         <div className="container">
           <div>
             <Link to={"/"}>
-              <span className="logo text-white">Fulminant </span>
+              <span className="logo text-white">Lightning Like </span>
               <button
                 onClick={() => changeLanguage("en")}
                 className="  btn button-circle btn-primary-rounded btn-sm  "
