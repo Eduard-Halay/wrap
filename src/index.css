@@ -15,6 +15,18 @@
     width: 1780px;
     margin: 50px;
 } */
+.num {
+    position: relative; /* Добавляем позиционирование, чтобы текст оставался внутри элемента */
+    background-color: #d83030;
+    color: #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center; /* Горизонтальное выравнивание текста по центру */
+    line-height: 20px;
+    margin-right: -20px; /* Вертикальное выравнивание текста по центру */
+    /* opacity:1; */
+  }
 .form-group{
     width: 200px;
    

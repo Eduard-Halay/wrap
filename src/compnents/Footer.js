@@ -8,12 +8,12 @@ export default function Footer() {
     i18n.changeLanguage(language);
   };
   return (
-    <footer class="section footer-classic section-sm">
-      <div class="container">
-        <div class="row row-30">
-          <div class="col-lg-3 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
-            <p class="footer-classic-title">{t("k")}</p>
-            <ul class="footer-classic-nav-list text-white bl">
+    <footer className="section footer-classic section-sm">
+      <div className="container">
+        <div className="row row-30">
+          <div className="col-lg-3 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
+            <p className="footer-classic-title">{t("k")}</p>
+            <ul className="footer-classic-nav-list text-white bl">
               <li>
                 <Link to={"/kof"}>{t("pp")} </Link>
               </li>
@@ -22,16 +22,16 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="col-lg-4 col-sm-8 wow fadeInUp">
-            <p class="footer-classic-title">{t("l")}</p>
+          <div className="col-lg-4 col-sm-8 wow fadeInUp">
+            <p className="footer-classic-title">{t("l")}</p>
 
             <a
-              class="d-inline-block accent-link bl"
+              className="d-inline-block accent-link bl"
               href="mailto:office.lightning.like@gmail.com"
             >
               office.lightning.like@gmail.com
             </a>
-            <ul class="footer-classic-nav-list text-white bl">
+            <ul className="footer-classic-nav-list text-white bl">
               <li>
                 <a
                   className="fa fa-instagram "
@@ -44,8 +44,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div class="container wow fadeInUp" data-wow-delay=".4s">
-        <div class="footer-classic-aside">
+      <div className="container wow fadeInUp" data-wow-delay=".4s">
+        <div className="footer-classic-aside">
           <p className="rights">
             <span className="text-white bl">
               &copy;&nbsp; All Rights Reserved. Design by Halay Eduard

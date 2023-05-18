@@ -16,6 +16,7 @@ const Order = (props) => {
         <p>
           <FaTrash className="delete-icon" onClick={handleDelete} />
         </p>
+        <p>{props.item.quantity}</p>
         <p>{props.item.finalprice}$</p>
         {/* пройтись циклом по корзине и из кажого елемента корзины собрать масив из
         нужных даных и отрпавить даные */}

@@ -4,33 +4,35 @@ import Order from "./Order";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+const ShowOrders = (props) => {
+  const { t } = useTranslation();
+
+  let summa = 0;
+  props.orders.forEach((el) => {
+    const finalprice = Number.parseFloat(el.finalprice);
+    if (!isNaN(finalprice)) {
+      summa += finalprice;
+    }
+  });
+  const isVisible = summa > 0;
+  return (
+    <div>
+      {props.orders.map((el) => (
+        <Order onDelete={props.onDelete} key={el.id} item={el} />
+      ))}
+      <p className="summa">
+        {t("oram")} {new Intl.NumberFormat().format(summa.toFixed(2))}$
+      </p>
+    </div>
+  );
+};
+
 export default function Header(props) {
   const [cartOpen, setCartOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
-  };
-
-  const ShowOrders = (props) => {
-    let summa = 0;
-    props.orders.forEach((el) => {
-      const finalprice = Number.parseFloat(el.finalprice);
-      if (!isNaN(finalprice)) {
-        summa += finalprice;
-      }
-    });
-
-    return (
-      <div>
-        {props.orders.map((el) => (
-          <Order onDelete={props.onDelete} key={el.id} item={el} />
-        ))}
-        <p className="summa">
-          {t("oram")} {new Intl.NumberFormat().format(summa.toFixed(2))}$
-        </p>
-      </div>
-    );
   };
 
   const showNothing = () => {
@@ -40,6 +42,15 @@ export default function Header(props) {
       </div>
     );
   };
+
+  let summa = 0;
+  props.orders.forEach((el) => {
+    const finalprice = Number.parseFloat(el.finalprice);
+    if (!isNaN(finalprice)) {
+      summa += finalprice;
+    }
+  });
+  const isVisible = summa > 0;
 
   return (
     <header className="section page-header">
@@ -62,6 +73,10 @@ export default function Header(props) {
               </button>
             </Link>
             <ul className="nav">
+              {isVisible && (
+                <li className="num">{/* Содержимое элемента */}</li>
+              )}
+
               <li>
                 <FaShoppingCart
                   onClick={() => setCartOpen(!cartOpen)}
@@ -75,7 +90,11 @@ export default function Header(props) {
             {cartOpen && (
               <div className="shop-cart">
                 {props.orders.length > 0 ? (
-                  <ShowOrders orders={props.orders} onDelete={props.onDelete} />
+                  <ShowOrders
+                    orders={props.orders}
+                    onDelete={props.onDelete}
+                    t={t} // Передача переменной t в компонент ShowOrders
+                  />
                 ) : (
                   showNothing()
                 )}

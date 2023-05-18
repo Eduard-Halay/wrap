@@ -17,7 +17,7 @@ const CartPage = (props) => {
         <div className="container" >
             
             {props.orders?.map(el => <Order key={el.id} item={el} onDelete={props.onDelete} />)}
-           <span style={{ paddingLeft: '15px' }}> {t("tp")} {totalPrice}</span><InputOrder/>
+           <h4><span style={{ paddingLeft: '15px' }}> {t("tp")} {totalPrice}</span></h4><InputOrder/>
         </div>
     );
 };

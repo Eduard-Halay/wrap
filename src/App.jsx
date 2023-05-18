@@ -204,20 +204,13 @@ class App extends React.Component {
   } 
  
   addToOrder(item) {
-    // добавляем каждый новый элемент в корзину, даже если он уже существует
+   
     this.setState({ orders: [...this.state.orders, item] });
     
     localStorage.setItem("orders", JSON.stringify([...this.state.orders, item]))
   }
-
  
-  // function getOrderString(item) {
-  //   const { category, title, textlink, link, finalprice } = item;
-  //   const orderString = `Заказал ${category} ${title} ${textlink} ${link} ${finalprice}`;
-  //   return orderString;
-  // }
-  // const orderString = getOrderString(item);
-  
+ 
   render() {
     return (
         <div> 
