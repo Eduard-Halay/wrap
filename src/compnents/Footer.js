@@ -35,7 +35,7 @@ export default function Footer() {
               <li>
                 <a
                   className="fa fa-instagram "
-                  href="https://www.instagram.com/lightning_like/?igshid=MzRlODBiNWFlZA%3D%3D"
+                  href="https://www.instagram.com/lightning_like/"
                 >
                   &nbsp;Instagram
                 </a>
