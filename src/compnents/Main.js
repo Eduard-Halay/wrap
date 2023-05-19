@@ -22,15 +22,15 @@ export default function Main() {
               >
                 <span className="biggest d-block d-xl-flex font-weight-bold"></span>
 
-                <span className="big font-weight-bold d-inline-flex offset-right-170">
+                <span className="big font-weight-bold d-inline-flex offset-right-170 calibr">
                   {t("tbs")}
                 </span>
-                <span className="align-top offset-top-30 d-inline-block font-weight-light prefix-text">
+                <span className="align-top offset-top-30 d-inline-block font-weight-light prefix-text calibr">
                   {t("teya")}
                 </span>
               </h1>
 
-              <div className="decorated-subtitle text-italic text-white wow slideInLeft">
+              <div className="decorated-subtitle text-italic text-white wow slideInLeft calibr">
                 {t("fifys")}
               </div>
             </div>

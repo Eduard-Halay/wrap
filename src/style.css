@@ -628,7 +628,7 @@ span.key {
 }
 
 .main-decorated-box .decorated-subtitle {
-	font-family: "Playfair Display", serif;
+	/* font-family: "Playfair Display", serif; */
 	line-height: 1.5;
 	font-size: 20px;
 	position: relative;
@@ -710,13 +710,15 @@ font-size: 22px;
 
 .box-default-title {
 	color: #404044;
-	font-weight: 400;
+	font-weight: 500;
+	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: .16em;
 }
 
 .box-default-description {
 	font-family: "Montserrat", serif;
+	font-size: 18px;
 }
 
 .box-default-icon {

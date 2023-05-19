@@ -5,7 +5,10 @@ export default function Rule() {
     <div className="container">
       <div className="row">
         <div className="col-xl-12 col-lg-12 col-12">
-          <div style={{ color: "#1e4f78" }}>
+          <div
+            className="calibr"
+            style={{ color: "#1e4f78", fontSize: "20px" }}
+          >
             <p>
               If you are interested in a refund, please see the section
               <b>

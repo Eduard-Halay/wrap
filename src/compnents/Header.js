@@ -17,12 +17,12 @@ const ShowOrders = (props) => {
   const isVisible = summa > 0;
   return (
     <div>
-      {props.orders.map((el) => (
-        <Order onDelete={props.onDelete} key={el.id} item={el} />
-      ))}
       <p className="summa">
         {t("oram")} {new Intl.NumberFormat().format(summa.toFixed(2))}$
       </p>
+      {props.orders.map((el) => (
+        <Order onDelete={props.onDelete} key={el.id} item={el} />
+      ))}
     </div>
   );
 };
@@ -90,21 +90,23 @@ export default function Header(props) {
             {cartOpen && (
               <div className="shop-cart">
                 {props.orders.length > 0 ? (
-                  <ShowOrders
-                    orders={props.orders}
-                    onDelete={props.onDelete}
-                    t={t} // Передача переменной t в компонент ShowOrders
-                  />
+                  <>
+                    <Link
+                      onClick={() => setCartOpen(!cartOpen)}
+                      className={"btn btn-primary"}
+                      to={"/cart"}
+                    >
+                      {t("next")}
+                    </Link>
+                    <ShowOrders
+                      orders={props.orders}
+                      onDelete={props.onDelete}
+                      t={t} // Передача переменной t в компонент ShowOrders
+                    />
+                  </>
                 ) : (
                   showNothing()
                 )}
-                <Link
-                  onClick={() => setCartOpen(!cartOpen)}
-                  className={"btn btn-primary"}
-                  to={"/cart"}
-                >
-                  {t("next")}
-                </Link>
               </div>
             )}
           </div>

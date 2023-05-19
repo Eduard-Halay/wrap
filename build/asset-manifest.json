@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0ca24d8.css",
-    "main.js": "/static/js/main.33348b72.js",
+    "main.css": "/static/css/main.cdd14f63.css",
+    "main.js": "/static/js/main.71cde87e.js",
     "static/media/materialdesignicons-webfont.svg?v=1.4.57": "/static/media/materialdesignicons-webfont.3a30eb21bbe7b62492c4.svg",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Linearicons.eot": "/static/media/Linearicons.bdfde8649159bef2d8af.eot",
@@ -21,11 +21,11 @@
     "static/media/Mercury-Regular.woff?62418065": "/static/media/Mercury-Regular.ec7be7cdb95961e298bd.woff",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.d0ca24d8.css.map": "/static/css/main.d0ca24d8.css.map",
-    "main.33348b72.js.map": "/static/js/main.33348b72.js.map"
+    "main.cdd14f63.css.map": "/static/css/main.cdd14f63.css.map",
+    "main.71cde87e.js.map": "/static/js/main.71cde87e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0ca24d8.css",
-    "static/js/main.33348b72.js"
+    "static/css/main.cdd14f63.css",
+    "static/js/main.71cde87e.js"
   ]
 }

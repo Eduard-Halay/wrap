@@ -1,6 +1,5 @@
 import Main from "../../compnents/Main";
 import Features from "../../compnents/Features";
-import Counters from "../../compnents/Counters";
 import Categories from "../../compnents/Categories";
 import Items from "../../compnents/Items";
 import ShowFullItem from "../../compnents/ShowFullItem";
@@ -10,7 +9,7 @@ const MainPage = (props) => {
         <>
             <Main />
             <Features />
-            <Counters />
+            
             <Categories chooseCategory={props.chooseCategory} />
             <Items
                 onShowItem={props.onShowItem}

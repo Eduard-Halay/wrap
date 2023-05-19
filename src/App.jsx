@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./compnents/Header";
 import Features from "./compnents/Features";
 import Main from "./compnents/Main";
-import Counters from "./compnents/Counters";
 import Categories from "./compnents/Categories";
 import Items from "./compnents/Items";
 import ShowFullItem from "./compnents/ShowFullItem";

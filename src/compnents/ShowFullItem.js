@@ -71,6 +71,7 @@ const ShowFullItem = ({ item, onAdd, onShowItem }) => {
         </div>
         <label>
           {t("eq")}
+          <br></br>
           <input
             type="number"
             value={quantity}

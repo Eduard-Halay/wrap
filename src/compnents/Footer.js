@@ -26,7 +26,7 @@ export default function Footer() {
             <p className="footer-classic-title">{t("l")}</p>
 
             <a
-              className="d-inline-block accent-link bl"
+              className="d-inline-block accent-link bl "
               href="mailto:office.lightning.like@gmail.com"
             >
               office.lightning.like@gmail.com

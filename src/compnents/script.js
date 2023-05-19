@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 emailjs.init("iDzr85ID5bf2romvV");
 
@@ -38,7 +39,9 @@ export default function sendmail() {
       document.getElementById("user_phone").value = "";
 
       console.log(res);
-      alert("your message sent succesfully");
+      alert(
+        "Thank you for your order. We will contact you shortly.\n Спасибо за Ваш заказ. Ми свяжемся с Вами в ближайшее время. "
+      );
     })
     .catch((err) => console.log(err));
 }

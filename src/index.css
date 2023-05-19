@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calibri&display=swap');
 
+.calibr{
+    font-family: "Calibri";
+}
 /* *{
     margin :0 ;
     padding: 0;
@@ -38,7 +41,7 @@ header{
 }
 header .logo{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
     margin-right: 25px;
 }
 header ul.nav {
