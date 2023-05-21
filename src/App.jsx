@@ -14,6 +14,7 @@ import MainPage from "./pages/main";
 import CartPage from "./pages/cart";
 import KofPage from "./pages/kof";
 import RulePage from "./pages/rule";
+import AlertPage from "./pages/alert";
 import { useTranslation } from "react-i18next";
 
 class App extends React.Component {
@@ -248,6 +249,14 @@ class App extends React.Component {
                 />
               }
               />
+               <Route path="/alert" element={
+                <AlertPage
+                orders={this.state.orders}
+                onDelete={this.deleteOrder}
+                />
+              }
+              />
+
             </Routes>
           <Footer />
         </div>

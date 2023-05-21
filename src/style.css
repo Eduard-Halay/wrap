@@ -753,11 +753,14 @@ font-size: 22px;
 }
 
 .image-left-side img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	width: auto; /* Изменяем значение на "auto" */
+	height: auto; /* Изменяем значение на "auto" */
+	max-width: 100%; /* Добавляем свойство "max-width" */
+	max-height: 100%; /* Добавляем свойство "max-height" */
+	object-fit: contain; /* Изменяем значение на "contain" */
 	box-shadow: 0px 0px 31px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .pricing-box {
 	margin-left: -10px;
@@ -3841,7 +3844,15 @@ textarea.form-input {
 	background: #ac75c8;
 	color: #aab2b9;
 	font-size: 16px;
-}
+	min-height: 620px; /* Минимальная высота футера */
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .container {
+	flex-grow: 1;
+  }
+  
 
 .footer-classic .brand .brand-logo-dark {
 	display: none;

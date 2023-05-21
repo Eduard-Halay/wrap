@@ -246,12 +246,14 @@ main .add-to-cart{
 main .add-to-cart:hover{
   transform:scale(1.5)translateY(-5px);
 }
-
-footer{
+/* footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    margin-top: 100px;
-}
-
+  } */
+  
 
 input#priceObject {
     border: none;

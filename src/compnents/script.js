@@ -1,5 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 emailjs.init("iDzr85ID5bf2romvV");
 
@@ -39,9 +41,7 @@ export default function sendmail() {
       document.getElementById("user_phone").value = "";
 
       console.log(res);
-      alert(
-        "Thank you for your order. We will contact you shortly.\n Спасибо за Ваш заказ. Ми свяжемся с Вами в ближайшее время. "
-      );
+      window.location.href = "/alert";
     })
     .catch((err) => console.log(err));
 }
