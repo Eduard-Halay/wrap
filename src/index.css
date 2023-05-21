@@ -18,18 +18,7 @@
     width: 1780px;
     margin: 50px;
 } */
-.num {
-    position: relative; /* Добавляем позиционирование, чтобы текст оставался внутри элемента */
-    background-color: #d83030;
-    color: #fff;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    text-align: center; /* Горизонтальное выравнивание текста по центру */
-    line-height: 20px;
-    margin-right: -20px; /* Вертикальное выравнивание текста по центру */
-    /* opacity:1; */
-  }
+
 .form-group{
     width: 200px;
    
@@ -63,14 +52,29 @@ header ul.nav li:hover{
 	font-size: 25px;
 	color:#fff;
 }
+header .num {
+    position: fixed;
+    background-color: #d83030;
+    color: #d83030;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    line-height: 15px;
+    right: 40px; /* Добавляем отступ справа в 30 пикселей */
+    top: 8px; /* Позиционируем элемент по вертикали относительно кнопки корзины */
+}
 
 
 
-header .shop-cart-button{
-    float: right;
+  header .shop-cart-button {
+    position: fixed;
+    top: 8px;
+    right: 0;
     cursor: pointer;
-    transition: color ,transform 500ms ease;
+    transition: color, transform 500ms ease;
     margin-top: 8px;
+    margin-right: 10px; /* Добавляем отступ справа в 10 пикселей */
 }
 header .shop-cart-button:hover,
 .shop-cart-button.active{
@@ -80,7 +84,7 @@ header .shop-cart-button:hover,
 
 header .shop-cart{
     position: absolute;
-    top: 30px;
+    top: 50px;
     right: 0;
     width: 250px;
     background: #fafafa;
