@@ -30,8 +30,8 @@ header{
 }
 header .logo{
     font-weight: 600;
-    font-size: 24px;
-    margin-right: 25px;
+    font-size: 20px;
+    margin-right: 5px;
 }
 header ul.nav {
     float: right;
@@ -61,7 +61,7 @@ header .num {
     width: 15px;
     text-align: center;
     line-height: 15px;
-    right: 40px; /* Добавляем отступ справа в 30 пикселей */
+    right: 70px; /* Добавляем отступ справа в 30 пикселей */
     top: 8px; /* Позиционируем элемент по вертикали относительно кнопки корзины */
 }
 
@@ -69,12 +69,13 @@ header .num {
 
   header .shop-cart-button {
     position: fixed;
-    top: 8px;
+    top: 4px;
+    
     right: 0;
     cursor: pointer;
     transition: color, transform 500ms ease;
     margin-top: 8px;
-    margin-right: 10px; /* Добавляем отступ справа в 10 пикселей */
+    margin-right: 45px; /* Добавляем отступ справа в 10 пикселей */
 }
 header .shop-cart-button:hover,
 .shop-cart-button.active{
