@@ -33,6 +33,7 @@ export default function Header(props) {
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
+    props.onTranslate(language);
   };
 
   const showNothing = () => {
@@ -60,13 +61,13 @@ export default function Header(props) {
             <Link to={"/"}>
               <span className="logo text-white">Lightning Like </span>
               <button
-                onClick={() => changeLanguage("en")}
+                onClick={() => changeLanguage("en-US")}
                 className="  btn button-circle btn-primary-rounded btn-sm  "
               >
                 En
               </button>
               <button
-                onClick={() => changeLanguage("ru")}
+                onClick={() => changeLanguage("ru-RU")}
                 className="  btn button-circle btn-primary-rounded btn-sm  "
               >
                 Ru
